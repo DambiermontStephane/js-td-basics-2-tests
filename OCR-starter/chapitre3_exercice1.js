@@ -10,8 +10,11 @@ dans ce cas, affichez dans la console le message "Demain, nous serons …"
 */
 
 const day = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche']
+const typeDay = prompt('Quel jours sommes nous ?')
 
-if (day === day) {
-
+if (typeDay === day) {
+    console.log('Gg')
+} else {
+    console.log('Erreur : jour non reconnu !')
 }
 
