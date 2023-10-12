@@ -8,3 +8,10 @@ affiche dasn la console "Erreur : jour non reconnu !"
 - Testez si la variable qui conntienyt le nom du jour n'ets pas vide et,
 dans ce cas, affichez dans la console le message "Demain, nous serons …"
 */
+
+const day = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche']
+
+if (day === day) {
+
+}
+
