@@ -97,7 +97,14 @@ if (!(nombre >= 100)) {
 
 if (nombre > 0){
     console.log(`${nombre} est positif`)
-} else
+} else{
+    if (nombre < 0) {
+        console.log(`${nombre} est négatif`)
+    }
+    else {
+        console.log(`${nombre} est nul`)
+    }
+}
 
 // 2°) Autre écriture pour le même test : le if / elseif / else
 
@@ -125,6 +132,8 @@ b) si elle a entre 13 et 20 ans, affichez "… est un adolescent."
 c) si elle a entre 20 et 30 ans, affichez "… est un jeune homme."
 d) sinon, affichez "… est un homme."
 */
+
+const firstName = prompt("Entrez votre prénom :")
 
 
 
