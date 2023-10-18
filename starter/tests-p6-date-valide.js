@@ -26,4 +26,47 @@ Par exemple,
  - Il ne reste plus ensuite qu'à comparer le jour entré par l'utilisateur avec maxJour pour retourner true ou fasle
   selon que la date est valide ou pas.
   */
-  
+const jour = parseInt(prompt("Entrez le jour :"))
+const mois = parseInt(prompt("Entrez le mois :"))
+const annee = parseInt(prompt("Entrez le annee :"))
+let isValide = true;
+
+if (isNaN(jour) || isNaN(mois) || isNaN(annee)) {
+    isValide = false;
+}
+if (jour < 1 || jour > 31) {
+    isValide = false;
+}
+if (mois < 1 || mois > 12) {
+    isValide = false;
+}
+if (annee < 1) {
+    isValide = false;
+}
+
+let isBissextile = false;
+
+if (((year % 4 === 0) && !(year % 100 === 0))|| year % 400 === 0) {
+    isBissextile = true;
+}
+
+switch (mois) {
+    case 2:
+        if (isBissextile) {
+            if (jour > 29) {
+                isValide = false;
+            } else {
+                if (jour > 28) {
+                    isValide = false;
+                }
+            }
+        }
+    break;
+    case 4:
+    case 6:
+    case 9:
+    case 11:
+        if (jour > 30) {
+            isValide = false
+        }
+}
