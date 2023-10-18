@@ -9,12 +9,12 @@ affiche dasn la console "Erreur : jour non reconnu !"
 dans ce cas, affichez dans la console le message "Demain, nous serons …"
 */
 
-const day = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche']
+const day = 'Mercredi'
 const typeDay = prompt('Quel jours sommes nous ?')
+let days
 
-if (typeDay === day) {
-    console.log('Gg')
+if (typeDay !== day) {
+    console.log('Juste')
 } else {
-    console.log('Erreur : jour non reconnu !')
+    console.log('Error')
 }
-

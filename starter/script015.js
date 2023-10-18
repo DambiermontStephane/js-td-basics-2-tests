@@ -16,7 +16,13 @@
 2. Avant de lancer votre navigateur et d'ouvrir la console, notez ici pour chaque ligne le résultat attendu dans un commentaire
 */
 
+const oui = true
+const non = false
 
+console.log(oui && non) // false
+console.log(non && oui) // false
+console.log(non && non) // false
+console.log(oui && oui) // true
 
 // Une condition qui utilise l'opérateur logique ET
 
@@ -25,7 +31,13 @@
 2. Testez si le nombre est dans l'intervalle [0, 100]. Autrement dit, testez si 0 <= nombre <= 100. Si c'est le cas, affichez "… est compris entre 0 et 100".
 */
 
+const nombre = prompt("Entrez un nombre :")
 
+if (0 <= nombre && nombre <= 100) {
+    console.log(`${nombre} est compris entre 0 et 100`)
+} else{
+    console.log(`${nombre} n'est pas compris entre 0 et 100`)
+}
 
 // 2°) L'opérateur logique OU
 
@@ -34,7 +46,10 @@
 2. Avant de lancer votre navigateur et d'ouvrir la console, notez ici pour chauqe ligne le résultat attendu dans un commentaire
 */
 
-
+console.log(oui || non) // true
+console.log(non || oui) // true
+console.log(oui || oui) // true
+console.log(non || non) // false
 
 // Une condition qui utilise l'opérateur logique OU
 
@@ -43,13 +58,18 @@
 2. Testez si le nombre en dehors de l'intervalle [0, 100]. Si c'est le cas, affichez "… est en dehors de l'intervalle [0, 100]".
 */
 
-
+if (0 >= nombre || nombre >=100) {
+    console.log(`${nombre} est en dehors de l'intervalle 0, 100`)
+} else{
+    console.log(`${nombre} est dans de l'intervalle 0, 100`)
+}
 
 // 3°) L'opérateur logique NOT
 
 /* Affichez dans la console le résultat NOT true puis le résultat de NOT false */
 
-
+console.log(!oui)
+console.log(!non)
 
 // Une condition qui utilise l'opérateur logique NOT
 
@@ -58,6 +78,11 @@
 2. Si ce nombre n'est pas supérieur à 100, affichez "… est inférieur ou égal à 100".
 */
 
+if (!(nombre >= 100)) {
+    console.log(`${nombre} est inférieur ou égal à 100`)
+} else{
+    console.log(`${nombre} est supérieur ou égal à 100`)
+}
 
 // 15-2. - LES ALTERNATIVES MULTIPLES
 
@@ -70,7 +95,9 @@
   2°) sinon, affichez "… est nul"
 */
 
-
+if (nombre > 0){
+    console.log(`${nombre} est positif`)
+} else
 
 // 2°) Autre écriture pour le même test : le if / elseif / else
 
@@ -80,7 +107,13 @@ BUT : réaliser le même test que l'exercice précédent mais avec l'écriture i
 2. Affichez "… est positif", "… est négatif" ou "… est nul" selon le cas
 */
 
-
+if (nombre > 0) {
+    console.log(`${nombre} est positif`)
+} else if(nombre < 0) {
+    console.log(`${nombre} est négatif`)
+} else {
+    console.log(`${nombre} est nul`)
+}
 
 // Une application
 
